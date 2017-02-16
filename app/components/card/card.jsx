@@ -12,11 +12,12 @@ class Card extends React.Component {
   render() {
     const { card } = this.props;
     const showImage = card.opened || card.turned;
-    return (
-        <div className="card-padding">
-            {!showImage && <div onClick={() => { this.props.turnCard(card); }} className="card-back"></div>}
-            <Image className={!showImage && 'hidden'} src={card.image} responsive />
-        </div>)
+    return (<div className="card-container">
+        <div className={showImage && 'card flipped' || 'card'}>
+            <div onClick={() => { this.props.turnCard(card); }} className="front"></div>
+            <Image className='back' src={card.image} responsive />
+        </div>
+      </div>)
   }
 }
 

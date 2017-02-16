@@ -1,11 +1,8 @@
 import React from 'react';
-import { Deck, ScoreTable, NewGame } from '../../components';
 import { Grid, Row, Col, ButtonToolbar, Button, Label } from 'react-bootstrap';
-import chunk from 'lodash/chunk';
-import chain from 'lodash/chain';
-import shuffle from 'lodash/shuffle';
-import map from 'lodash/map';
-import {gamesApi} from '../../actions';
+
+import { Deck, ScoreTable, NewGame } from '../../components';
+import { gamesApi } from '../../actions';
 
 
 class CardBoard extends React.Component {
@@ -64,7 +61,7 @@ class CardBoard extends React.Component {
                 })}));
                 setTimeout(()=> {
                   this.setState(Object.assign({}, this.state, game));
-                }, 5e2);
+                }, 7e2);
               } else {
                 console.log('getResults');
                 this.setState(Object.assign({}, this.state, game));
