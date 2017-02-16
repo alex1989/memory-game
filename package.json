@@ -7,13 +7,8 @@
   "main": "app/main.jsx",
   "scripts": {
     "server-test": "mocha --timeout 10000",
-    "lint": "eslint '@(api|app)/**/*.@(js|jsx)'",
     "test": "jest",
-    "test-coverage": "jest --coverage",
-    "build": "webpack",
     "start": "concurrently \"node server/bin/www\" \"webpack-dev-server --devtool eval --progress --hot --content-base app\"",
-    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
-    "deploy-windows": "SET NODE_ENV=production & webpack -p --config webpack.production.config.js"
   },
   "dependencies": {
     "babel-runtime": "6.20.0",
