@@ -2,8 +2,7 @@
 
 ## Requirements
 
-Install `yarn`, and `mongodb` read how [here](https://yarnpkg.com/en/docs/install).
-
+Install `yarn`, and `mongodb`
 ## Installation
 
 Run the following commands:
