@@ -1,0 +1,1 @@
+export * as gamesApi from './games/games';

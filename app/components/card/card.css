@@ -1,0 +1,10 @@
+.card-padding {
+    margin: 10px;
+}
+
+.card-back {
+    border-radius: 10px;
+    background: #c6c6c6;
+    width: 226px;
+    height: 314px;
+}

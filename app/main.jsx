@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App/App';
+
+import CardBoard from './container/card-board/card-board';
+
+require('bootstrap/dist/css/bootstrap.css');
 
 ReactDOM.render(
-	<App />,
+	<CardBoard />,
 	document.body.appendChild(document.createElement('div')),
 );
